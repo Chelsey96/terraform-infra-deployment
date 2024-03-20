@@ -11,6 +11,7 @@ resource "aws_instance" "jetblue-prod" {
 
 resource "aws_instance" "jetblue-stage"{
     instance_type = var.stage_instance_type
+    subnet_id = "subnet-09fd4ac937f15cb17"
     ami = var.stage_ami
     tags = {
         name = var.stage_instance_tag
