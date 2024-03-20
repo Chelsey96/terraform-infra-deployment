@@ -9,7 +9,7 @@ resource "aws_instance" "jetblue-prod" {
 
 
 resource "aws_instance" "jetblue-stage"{
-    instance_type = var.stage_ami
+    instance_type = var.stage_instance_type
     ami = var.stage_ami
     tags = {
         name = var.stage_instance_tag
